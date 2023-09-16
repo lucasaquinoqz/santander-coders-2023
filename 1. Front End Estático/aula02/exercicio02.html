@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+    <style>
+        
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: center;
+            border: 1px solid rgb(180, 179, 179);
+            padding: 10px 10px;
+        }
+        .alinhamento-esquerda {
+            text-align: left;
+            padding-right: 60px;
+        }
+        .coluna-vazia  {
+            border: none;
+        }
+        .preco {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .cor1 {
+            background-color: #7ebff2;
+        }
+        .cor2 {
+            background-color: #4a87ec;
+        }
+        .cor3 {
+            background-color: #7073ec;
+        }
+        .botao {
+            font-size: 12px;
+            color: white;
+            width: 130px;
+            height: 35px;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="coluna-vazia"></th>
+                <th>Básico</th>
+                <th>Padrão</th>
+                <th>Avançado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="alinhamento-esquerda">Preço mensal</td>
+                <td class="preco cor1">R$ 29</td>
+                <td class="preco cor2">R$ 59</td>
+                <td class="preco cor3">R$ 139</td>
+            </tr>
+            <tr>
+                <td class="alinhamento-esquerda">Comercial</td>
+                <td>1 usuário completo</td>
+                <td>5 usuários completos</td>
+                <td>Usuários personalizados</td>
+            </tr>
+            <tr>
+                <td class="alinhamento-esquerda">Usuário ilimitados somente leitura</td>
+                <td>1.000 visualizações</td>
+                <td>2.000 visualizações</td>
+                <td>Visualizações de email personalizadas</td>
+            </tr>
+            <tr>
+                <td class="alinhamento-esquerda">Contatos</td>
+                <td>5 contatos por cliente</td>
+                <td>25 contatos por cliente</td>
+                <td>Contatos ilimitados</td>
+            </tr>
+            <tr>
+                <td class="alinhamento-esquerda">Café</td>
+                <td>5 xícaras</td>
+                <td>8 xícaras</td>
+                <td>10 xícaras</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="botao cor1">Escolha o plano</button></td>
+                <td><button class="botao cor2">Escolha o plano</button></td>
+                <td><button class="botao cor3">Escolha o plano</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

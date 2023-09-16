@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Luxurious Script', cursive;
+    font-size: 70px;
+    padding: 20px 0px;
+    
+}
+
+header nav {
+    font-family: 'Mohave', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+header nav button {
+    font-family: 'Mohave', sans-serif;
+    background-color: #BEBEBE;
+    padding: 5px 10px;
+    border: none;
+}
+
+header nav input {
+    padding: 5px;
+}
+
+header nav select {
+    padding: 5px;
+}
+
+
+main .conteiner {
+    margin: 0px auto;
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.remover {
+    display: flex;
+    justify-content: right;
+}
+
+.remover .btn-remover {
+    background-color: transparent;
+    border: none;
+    padding: 10px 5px;
+}
+
+.remover .btn-remover img {
+    width: 20px;
+    height: auto;
+    filter: hue-rotate(120deg) saturate(10%);
+}
+
+.remover .btn-remover img:hover{
+    filter: none;
+}
+
+.item .img .remover{
+    position: absolute;
+    top: -5px;
+    right: 0px;
+}
+
+.item {
+    margin: auto;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: .5s;
+    font-family: 'Mohave', sans-serif;
+}
+
+/* .item:hover {
+    scale: 1.05;
+} */
+
+.item .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEBEBE;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.item .img .img-produto{
+    display: flex;
+    justify-content: center;
+}
+
+.item .img .img-produto img{
+    background-color: #BEBEBE;
+    width: 200px;
+    height: 200px;
+}
+
+.item .descricao-geral {
+    background-color: #909090;
+    width: 250px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.item .descricao-geral .comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    flex-direction: column;
+    
+}
+
+.item .descricao-geral .comprar button {
+    font-family: 'Mohave', sans-serif;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#editarConcluir{
+    background-color: green;
+}
+
+#editarCancelar{
+    background-color: red;
+}
+
+.item .descricao-geral .descricao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px;
+    
+}
+
+

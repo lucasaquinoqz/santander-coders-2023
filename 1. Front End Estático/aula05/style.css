@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding: 30px;
+}
+
+header p {
+    padding-bottom: 30px;
+}
+
+nav {
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(214, 214, 214);
+}
+
+.cardapio h1 {
+    padding: 40px 0px 10px 20px;
+}
+
+.cardapio div {
+    padding: 10px 20px;
+}
+
+.cardapio img {
+    width: 130px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.imagem {
+    grid-area: imagem;
+}
+
+.titulo-produto {
+    grid-area: titulo-produto;
+}
+
+.descricao-produto {
+    grid-area: descricao-produto;
+}
+
+.separa-produto {
+    grid-area: separa-produto;
+    border: 0.5px solid rgb(214, 214, 214);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 140px auto;
+    grid-template-areas: "imagem titulo-produto" "imagem descricao-produto" "separa-produto separa-produto";
+}
+
+.tabela-precos h1 {
+    padding: 20px;
+}
+
+.tabela-precos table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 750px;
+}
+
+.tabela-precos thead {
+    background-color: rgb(237, 237, 237);
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabela-precos td {
+    border: 0.5px solid rgb(214, 214, 214);
+    padding: 10px;
+}
+
+.formulario-cadastro h1 {
+    padding: 20px;
+}
+
+.formulario-cadastro form {
+    margin: auto;
+    width: 750px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(214, 214, 214);
+    padding: 20px;
+}
+
+.formulario-cadastro form input {
+    margin: 10px 0px;
+    width: 700px;
+    height: 30px;
+    border: 0.5px solid rgb(214, 214, 214);
+    border-radius: 5px;
+}
+
+.formulario-cadastro form textarea {
+    margin: 10px 0px;
+    width: 700px;
+    height: 100px;
+    border: 0.5px solid rgb(214, 214, 214);
+    border-radius: 5px;
+}
+
+.botao-enviar {
+    width: 700px;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #4caf50;
+    color: white;
+}

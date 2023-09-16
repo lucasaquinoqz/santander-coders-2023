@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 5% 75% 5%;
+}
+
+.cardapio {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(89, 155, 254);
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(122, 255, 122);
+}
+
+.conteudo {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.item {
+    flex: 1;
+    padding: 5px;
+    background-color: rgb(255, 186, 58);
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: gray;
+}
