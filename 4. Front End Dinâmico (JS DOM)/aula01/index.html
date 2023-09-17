@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .conteiner {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calculadora {
+            height: 500px;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        .visor {
+            height: 200px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        /* .botoes {
+        } */
+
+        .linha-normal {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .linha-diferente {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="calculadora">
+            <div class="visor">
+                <span id="visor">0</span>
+            </div>
+            <div class="botoes">
+                <div class="linha-normal">
+                    <button id="ac">AC</button>
+                    <button id="mudaSinal">+/-</button>
+                    <button id="porcentagem">%</button>
+                    <button id="divisao">/</button>
+                </div>
+
+                <div class="linha-normal">
+                    <button id="num7">7</button>
+                    <button id="num8">8</button>
+                    <button id="num9">9</button>
+                    <button id="multiplicacao">x</button>
+                </div>
+                
+                <div class="linha-normal">
+                    <button id="num4">4</button>
+                    <button id="num5">5</button>
+                    <button id="num6">6</button>
+                    <button id="subtracao">-</button>
+                </div>
+
+                <div class="linha-normal">
+                    <button id="num1">1</button>
+                    <button id="num2">2</button>
+                    <button id="num3">3</button>
+                    <button id="adicao">+</button>
+                </div>
+                
+                <div class="linha-diferente">
+                    <button id="num0">0</button>
+                    <button id="ponto">,</button>
+                    <button id="igual">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
