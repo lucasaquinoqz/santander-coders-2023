@@ -13,7 +13,7 @@ PRINCIPAL (1000XP)
 Operações de CREATE, UPDATE e DELETE devem atualizar os dados no local storage e no CRUDCRUD (100XP);
 <!-- Deve haver validação de cada campo, feita através do Javascript (não precisa daquela feita pelo HTML), bem como feito em sala (100XP); -->
 <!-- Utilizar o local storage para persistir os dados (100XP); -->
-Registrar também os dados usando a API do CRUDCRUD (se quiser usar outra API, beleza) (100XP).
+<!-- Registrar também os dados usando a API do CRUDCRUD (se quiser usar outra API, beleza) (100XP). -->
 
 EXTRA (200XP):
 
