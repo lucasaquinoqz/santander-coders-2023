@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Dinossauros</title>
+</head>
+
+<body>
+    
+    <div>
+        <form id="form">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade">
+            </div>
+            <div>
+                <label for="especie">Especie</label>
+                <select name="especie" id="especie">
+                    <option value="null">Selecione uma especie</option>
+                    <option value="Tiranossauro Rex">Tiranossauro Rex</option>
+                    <option value="Triceratops">Triceratops</option>
+                    <option value="Velociraptor">Velociraptor</option>
+                </select>
+            </div>
+            <div>
+                <label for="genero">Genero:</label>
+                <div>
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="genero" id="feminino" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
+            <div>
+                <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Conte aqui uma breve descrição desse Dino..."></textarea>
+            </div>
+            <button type="submit" id="btnEnviar">Enviar</button>
+        </form>
+        <a href="index.html">Voltar</a>
+    </div>
+    <script src="registro.js"></script>
+</body>
+
+</html>
