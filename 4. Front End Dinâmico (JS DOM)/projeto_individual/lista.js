@@ -6,6 +6,9 @@ arrayDinos.forEach((dino, index) => {
     const item = document.createElement("div")
     item.className = "item"
 
+    const anchor = document.createElement("a")
+    anchor.href = `popup.html?id=${index}`
+
     const img = document.createElement("img")
     img.src = `src/${dino.especie.replace(/\s/g, '')}.jpeg`
     img.width = "50"
@@ -30,10 +33,11 @@ arrayDinos.forEach((dino, index) => {
         }
     });
 
-    item.appendChild(img);
-    item.appendChild(name);
-    item.appendChild(btnEditar);
-    item.appendChild(btnDelete);
+    anchor.appendChild(img)
+    item.appendChild(anchor)
+    item.appendChild(name)
+    item.appendChild(btnEditar)
+    item.appendChild(btnDelete)
 
     container.appendChild(item);
 
