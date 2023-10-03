@@ -53,14 +53,27 @@ btnDelete.addEventListener("click", () => {
     }
 })
 
+const btnVoltar = document.createElement("a")
+btnVoltar.href = `./`
+btnVoltar.innerText = "Voltar"
+btnVoltar.id = "voltar"
+
+const divBtnEditar = document.createElement("div")
+const divBtnDelete = document.createElement("div")
+const divVtnVoltar = document.createElement("div")
+
 item.appendChild(img)
 item.appendChild(nomeDino)
 item.appendChild(idadeDino)
 item.appendChild(especieDino)
 item.appendChild(generoDino)
 item.appendChild(descricaoDino)
-item.appendChild(btnEditar)
-item.appendChild(btnDelete)
+divBtnEditar.appendChild(btnEditar)
+item.appendChild(divBtnEditar)
+divBtnDelete.appendChild(btnDelete)
+item.appendChild(divBtnDelete)
+divVtnVoltar.appendChild(btnVoltar)
+item.appendChild(divVtnVoltar)
 
 container.appendChild(item)
     }
