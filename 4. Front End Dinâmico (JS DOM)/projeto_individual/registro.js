@@ -1,4 +1,6 @@
-const arrayDinos = JSON.parse(localStorage.getItem("arrayDinos")) || [];
+const arrayDinos = JSON.parse(localStorage.getItem("arrayDinos")) || []
+const URL = "https://crudcrud.com/api/c10f73e00dfe4ffc9a309ae700a4b326"
+
 
 function getAnimal(id) {
     if (id) {
@@ -24,6 +26,26 @@ function getAnimal(id) {
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 getAnimal(id);
+
+async function addDino(dinoObj) {
+    const response = await fetch(URL, {
+      method: "POST",
+      body: JSON.stringify(dinoObj),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    
+    return await response.json();
+  }
+  
+  async function updateDino(id, dinoObj) {
+    const response = await fetch(URL + `/${id}`, {
+      method: "PUT",
+      body: JSON.stringify(dinoObj),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    
+    return await response.json();
+  }
 
 form.addEventListener('submit', function (event) {
     event.preventDefault()
@@ -65,16 +87,17 @@ form.addEventListener('submit', function (event) {
     }
 
     if (id) {
-        arrayDinos[id] = novoDino;
+        arrayDinos[id] = novoDino
+        updateDino(id, novoDino).then(alert.log)
     } else {
         arrayDinos.push(novoDino)
+        addDino(novoDino).then((data) => alert.log(data))
     }
-
 
     localStorage.setItem("arrayDinos", JSON.stringify(arrayDinos));
 
     console.log(novoDino)
     form.reset()
-    window.location = './';
+    // window.location = './';
 })
 

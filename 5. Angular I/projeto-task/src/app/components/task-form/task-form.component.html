@@ -1,0 +1,19 @@
+<div>
+    <h2>Adicionar tarefa</h2>
+
+    <form (ngSubmit)="submitTask()">
+        <div>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" name="titulo" [(ngModel)]="newTask.titulo">
+        </div>
+        <div>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10" [(ngModel)]="newTask.descricao"></textarea>
+        </div>
+        <div>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" [(ngModel)]="newTask.data">
+        </div>
+        <button type="submit">Adicionar tarefa</button>
+    </form>
+</div>
