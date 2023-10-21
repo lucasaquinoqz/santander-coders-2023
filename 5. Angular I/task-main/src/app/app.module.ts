@@ -10,6 +10,7 @@ import { TaskDetailComponent } from './components/task-detail/task-detail.compon
 import { TaskLogComponent } from './components/task-log/task-log.component';
 import { RedIfTodayPassesDirective } from './directives/red-if-today-passes.directive';
 import { TaskFilterComponent } from './components/task-filter/task-filter.component';
+import { TaskTableComponent } from './components/task-table/task-table.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TaskFilterComponent } from './components/task-filter/task-filter.compon
     TaskLogComponent,
     RedIfTodayPassesDirective,
     TaskFilterComponent,
+    TaskTableComponent,
   ],
   imports: [
     BrowserModule,

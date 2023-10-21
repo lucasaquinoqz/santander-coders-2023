@@ -11,8 +11,150 @@ export class AppComponent {
   selectedTask: Task | null = null
   taskLog: Task[] = []
 
+  tasksBacklog: Task[] = [
+    {
+      title: "Titulo 01",
+      description: "Descrição 01",
+      date: new Date(),
+      status: "Backlog"
+    },
+    {
+      title: "Titulo 01",
+      description: "Descrição 01",
+      date: new Date(),
+      status: "Backlog"
+    },
+    {
+      title: "Titulo 01",
+      description: "Descrição 01",
+      date: new Date(),
+      status: "Backlog"
+    },
+    {
+      title: "Titulo 01",
+      description: "Descrição 01",
+      date: new Date(),
+      status: "Backlog"
+    },
+    {
+      title: "Titulo 01",
+      description: "Descrição 01",
+      date: new Date(),
+      status: "Backlog"
+    },
+    {
+      title: "Titulo 01",
+      description: "Descrição 01",
+      date: new Date(),
+      status: "Backlog"
+    },
+    {
+      title: "Titulo 01",
+      description: "Descrição 01",
+      date: new Date(),
+      status: "Backlog"
+    }
+  ]
+  tasksAndamento: Task[] = [
+    {
+      title: "Titulo 02",
+      description: "Descrição 02",
+      date: new Date(),
+      status: "Andamento"
+    },
+    {
+      title: "Titulo 02",
+      description: "Descrição 02",
+      date: new Date(),
+      status: "Andamento"
+    },
+    {
+      title: "Titulo 02",
+      description: "Descrição 02",
+      date: new Date(),
+      status: "Andamento"
+    },
+    {
+      title: "Titulo 02",
+      description: "Descrição 02",
+      date: new Date(),
+      status: "Andamento"
+    },
+    {
+      title: "Titulo 02",
+      description: "Descrição 02",
+      date: new Date(),
+      status: "Andamento"
+    },
+    {
+      title: "Titulo 02",
+      description: "Descrição 02",
+      date: new Date(),
+      status: "Andamento"
+    },
+    {
+      title: "Titulo 02",
+      description: "Descrição 02",
+      date: new Date(),
+      status: "Andamento"
+    }
+  ]
+  tasksConcluido: Task[] = [
+    {
+      title: "Titulo 03",
+      description: "Descrição 03",
+      date: new Date(),
+      status: "Concluido"
+    },
+    {
+      title: "Titulo 03",
+      description: "Descrição 03",
+      date: new Date(),
+      status: "Concluido"
+    },
+    {
+      title: "Titulo 03",
+      description: "Descrição 03",
+      date: new Date(),
+      status: "Concluido"
+    },
+    {
+      title: "Titulo 03",
+      description: "Descrição 03",
+      date: new Date(),
+      status: "Concluido"
+    },
+    {
+      title: "Titulo 03",
+      description: "Descrição 03",
+      date: new Date(),
+      status: "Concluido"
+    },
+    {
+      title: "Titulo 03",
+      description: "Descrição 03",
+      date: new Date(),
+      status: "Concluido"
+    },
+    {
+      title: "Titulo 03",
+      description: "Descrição 03",
+      date: new Date(),
+      status: "Concluido"
+    }
+  ]
+
   onAddTask(task: Task) {
     this.listTask.push(task)
+    if (task.status === "Backlog") {
+      this.tasksBacklog.push(task)
+    }
+    if (task.status === "Andamento") {
+      this.tasksAndamento.push(task)
+    }
+    if (task.status === "Concluido") {
+      this.tasksConcluido.push(task)
+    }
   }
 
   handleTask(task: Task) {
@@ -20,7 +162,7 @@ export class AppComponent {
     this.taskLog.push(task)
   }
 
-  fecharDetalhes(){
+  fecharDetalhes() {
     this.selectedTask = null
   }
 

@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Task } from 'src/app/model/task.model';
 
 @Component({
   selector: 'app-task-filter',
@@ -8,7 +9,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class TaskFilterComponent {
   filtro!: string
   @Output() sendFilter = new EventEmitter();
-  
+
   filtrando() {
     // const filtrado = this.filtro
     this.sendFilter.emit({ filtro: this.filtro });

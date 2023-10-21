@@ -1,0 +1,36 @@
+<div class="quadros">
+  <div class="status">
+    <h2>Backlog</h2>
+    <div class="tasks" *ngFor="let task of tasksBacklog">
+      <div>
+        <h3>{{ task.title }}</h3>
+      </div>
+      <div>
+        {{ task.description }}
+      </div>
+    </div>
+  </div>
+  <div class="status">
+    <h2>Andamento</h2>
+    <div class="tasks" *ngFor="let task of tasksAndamento">
+      <div>
+        <h3>{{ task.title }}</h3>
+      </div>
+      <div>
+        {{ task.description }}
+      </div>
+    </div>
+
+  </div>
+  <div class="status">
+    <h2>Concluido</h2>
+    <div class="tasks" *ngFor="let task of tasksConcluido">
+      <div>
+        <h3>{{ task.title }}</h3>
+      </div>
+      <div>
+        {{ task.description }}
+      </div>
+    </div>
+  </div>
+</div>

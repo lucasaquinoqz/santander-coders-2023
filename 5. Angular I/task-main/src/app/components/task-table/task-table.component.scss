@@ -1,0 +1,27 @@
+.quadros {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.status {
+    flex-direction: column;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    padding: 20px;
+    width: 30%;
+    gap: 10px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(174, 174, 174);
+    border-radius: 10px;
+    
+}
+

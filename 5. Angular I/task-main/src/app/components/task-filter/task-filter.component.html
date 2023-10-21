@@ -2,8 +2,10 @@
     <label for="filtro">Filtro</label>
     <select name="filtro" id="filtro" [(ngModel)]="filtro" (change)="filtrando()">
         <option value="null" disabled selected>Selecione uma opção válida</option>
+        <option value="All">Tudo</option>
         <option value="Backlog">Backlog</option>
         <option value="Andamento">Andamento</option>
         <option value="Concluido">Concluido</option>
     </select>
 </div>
+
