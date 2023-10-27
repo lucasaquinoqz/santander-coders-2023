@@ -11,6 +11,8 @@ import { TaskLogComponent } from './components/task-log/task-log.component';
 import { RedIfTodayPassesDirective } from './directives/red-if-today-passes.directive';
 import { TaskFilterComponent } from './components/task-filter/task-filter.component';
 import { TaskTableComponent } from './components/task-table/task-table.component';
+import { TaskFormReactiveComponent } from './components/task-form-reactive/task-form-reactive.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { TaskTableComponent } from './components/task-table/task-table.component
     RedIfTodayPassesDirective,
     TaskFilterComponent,
     TaskTableComponent,
+    TaskFormReactiveComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

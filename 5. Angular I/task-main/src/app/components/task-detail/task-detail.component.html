@@ -5,6 +5,9 @@
     <p>Descrição: {{task?.description}}</p>
     <p>Data de Vencimento: {{task?.date}}</p>
     <p>Status: {{task?.status}}</p>
+    <ng-container *ngFor="let tag of task?.tags let i = index">
+        <p>Tag {{i+1}}: {{tag}}</p>
+    </ng-container>
 
     <button (click)="close()">Fechar</button>
 </div>

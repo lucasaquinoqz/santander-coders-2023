@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Task } from 'src/app/model/task.model';
 
 @Component({
@@ -12,26 +12,13 @@ export class TaskTableComponent {
   @Input() tasksAndamento!: Task[]
   @Input() tasksConcluido!: Task[]
 
-  // ngOnInit() {
-  //   for(let task of this.tasks){
-  //     if (task.status === "Backlog") {
-  //       this.tasksBacklog.push(task)
-  //     }
-  //     if (task.status === "Andamento") {
-  //       this.tasksAndamento.push(task)
-  //     }
-  //     if (task.status === "Concluido") {
-  //       this.tasksConcluido.push(task)
-  //     }
-  //   }
-  // }
-  
+  @Output() handleTask = new EventEmitter();
 
+  taskLog: Task | null = null
+  @Output() sendLogs = new EventEmitter();
 
-  // filtraConcluido(task: Task){
-  //   if(task.status == "Concluido"){
-  //     console.log(task)
-  //   }
-  //   return task
-  // }
+  selectedTask(task: Task) {
+    this.handleTask.emit({ ...task });
+    this.sendLogs.emit(this.taskLog)
+  }
 }

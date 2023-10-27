@@ -1,7 +1,8 @@
-<app-task-form (addTask)="onAddTask($event)" ></app-task-form>
-<app-task-list [tasks]="listTask" (handleTask)="handleTask($event)"></app-task-list>
+<!-- <app-task-form (addTask)="onAddTask($event)" ></app-task-form> -->
+<app-task-form-reactive (addTask)="onAddTask($event)" ></app-task-form-reactive>
+<!-- <app-task-list [tasks]="listTask" (handleTask)="handleTask($event)"></app-task-list> -->
+<app-task-table [tasksBacklog]="tasksBacklog" [tasksAndamento]="tasksAndamento" [tasksConcluido]="tasksConcluido" (handleTask)="handleTask($event)"></app-task-table>
 <div *ngIf="selectedTask">
     <app-task-detail [task]="selectedTask" (closeDetail)="fecharDetalhes()"></app-task-detail>
 </div>
 <app-task-log [taskLog]="taskLog"></app-task-log>
-<app-task-table [tasksBacklog]="tasksBacklog" [tasksAndamento]="tasksAndamento" [tasksConcluido]="tasksConcluido"></app-task-table>

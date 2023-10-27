@@ -16,43 +16,50 @@ export class AppComponent {
       title: "Titulo 01",
       description: "Descrição 01",
       date: new Date(),
-      status: "Backlog"
+      status: "Backlog",
+      tags:["Anguar", "JS"]
     },
     {
       title: "Titulo 01",
       description: "Descrição 01",
       date: new Date(),
-      status: "Backlog"
+      status: "Backlog",
+      tags:["Anguar", "JS"]
     },
     {
       title: "Titulo 01",
       description: "Descrição 01",
       date: new Date(),
-      status: "Backlog"
+      status: "Backlog",
+      tags:["Anguar", "JS"]
     },
     {
       title: "Titulo 01",
       description: "Descrição 01",
       date: new Date(),
-      status: "Backlog"
+      status: "Backlog",
+      tags:["Anguar", "JS"]
     },
     {
       title: "Titulo 01",
       description: "Descrição 01",
       date: new Date(),
-      status: "Backlog"
+      status: "Backlog",
+      tags:["Anguar", "JS"]
     },
     {
       title: "Titulo 01",
       description: "Descrição 01",
       date: new Date(),
-      status: "Backlog"
+      status: "Backlog",
+      tags:["Anguar", "JS"]
     },
     {
       title: "Titulo 01",
       description: "Descrição 01",
       date: new Date(),
-      status: "Backlog"
+      status: "Backlog",
+      tags:["Anguar", "JS"]
     }
   ]
   tasksAndamento: Task[] = [
@@ -60,43 +67,50 @@ export class AppComponent {
       title: "Titulo 02",
       description: "Descrição 02",
       date: new Date(),
-      status: "Andamento"
+      status: "Andamento",
+      tags:["Pytho"]
     },
     {
       title: "Titulo 02",
       description: "Descrição 02",
       date: new Date(),
-      status: "Andamento"
+      status: "Andamento",
+      tags:["Pytho"]
     },
     {
       title: "Titulo 02",
       description: "Descrição 02",
       date: new Date(),
-      status: "Andamento"
+      status: "Andamento",
+      tags:["Pytho"]
     },
     {
       title: "Titulo 02",
       description: "Descrição 02",
       date: new Date(),
-      status: "Andamento"
+      status: "Andamento",
+      tags:["Pytho"]
     },
     {
       title: "Titulo 02",
       description: "Descrição 02",
       date: new Date(),
-      status: "Andamento"
+      status: "Andamento",
+      tags:["Pytho"]
     },
     {
       title: "Titulo 02",
       description: "Descrição 02",
       date: new Date(),
-      status: "Andamento"
+      status: "Andamento",
+      tags:["Pytho"]
     },
     {
       title: "Titulo 02",
       description: "Descrição 02",
       date: new Date(),
-      status: "Andamento"
+      status: "Andamento",
+      tags:["Pytho"]
     }
   ]
   tasksConcluido: Task[] = [
@@ -104,47 +118,55 @@ export class AppComponent {
       title: "Titulo 03",
       description: "Descrição 03",
       date: new Date(),
-      status: "Concluido"
+      status: "Concluido",
+      tags:["PHP", "HTML", "CSS"]
     },
     {
       title: "Titulo 03",
       description: "Descrição 03",
       date: new Date(),
-      status: "Concluido"
+      status: "Concluido",
+      tags:["PHP", "HTML", "CSS"]
     },
     {
       title: "Titulo 03",
       description: "Descrição 03",
       date: new Date(),
-      status: "Concluido"
+      status: "Concluido",
+      tags:["PHP", "HTML", "CSS"]
     },
     {
       title: "Titulo 03",
       description: "Descrição 03",
       date: new Date(),
-      status: "Concluido"
+      status: "Concluido",
+      tags:["PHP", "HTML", "CSS"]
     },
     {
       title: "Titulo 03",
       description: "Descrição 03",
       date: new Date(),
-      status: "Concluido"
+      status: "Concluido",
+      tags:["PHP", "HTML", "CSS"]
     },
     {
       title: "Titulo 03",
       description: "Descrição 03",
       date: new Date(),
-      status: "Concluido"
+      status: "Concluido",
+      tags:["PHP", "HTML", "CSS"]
     },
     {
       title: "Titulo 03",
       description: "Descrição 03",
       date: new Date(),
-      status: "Concluido"
+      status: "Concluido",
+      tags:["PHP", "HTML", "CSS"]
     }
   ]
 
   onAddTask(task: Task) {
+    console.log(task)
     this.listTask.push(task)
     if (task.status === "Backlog") {
       this.tasksBacklog.push(task)
