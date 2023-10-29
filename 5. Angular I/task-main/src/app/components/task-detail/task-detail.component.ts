@@ -9,8 +9,14 @@ import { Task } from 'src/app/model/task.model';
 export class TaskDetailComponent {
   @Input() task: Task | null = null
   @Output() closeDetail = new EventEmitter()
+  @Output() editTask = new EventEmitter();
 
   close(){
     this.closeDetail.emit()
+  }
+
+  handleEditTask() {
+    this.editTask.emit(this.task);
+    console.log(this.task)
   }
 }

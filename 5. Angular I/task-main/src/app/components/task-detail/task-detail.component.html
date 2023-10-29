@@ -8,6 +8,6 @@
     <ng-container *ngFor="let tag of task?.tags let i = index">
         <p>Tag {{i+1}}: {{tag}}</p>
     </ng-container>
-
+    <button (click)="handleEditTask()" class="btn btn-primary my-3">Atualizar</button><br>
     <button (click)="close()">Fechar</button>
 </div>

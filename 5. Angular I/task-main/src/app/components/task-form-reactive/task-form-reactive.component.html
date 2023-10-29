@@ -38,18 +38,18 @@
 
         <button type="button" class="btn btn-secondary" (click)="addTag()">
             Adicionar Tag
-          </button>
-      
-      
-          <div class="form-group" formArrayName="tags">
-            <div *ngFor="let tag of tags.controls; let i = index">
-              <label for="tags">Nome da Tag:</label>
-      
-              <input id="tags" type="text" [formControlName]="i" />
-            </div>
-          </div>
+        </button>
 
-        <button type="submit">Adicionar Tarefas</button>
+
+        <div class="form-group" formArrayName="tags">
+            <div *ngFor="let tag of tags.controls; let i = index">
+                <label for="tags">Nome da Tag:</label>
+
+                <input id="tags" type="text" [formControlName]="i" />
+            </div>
+        </div><br>
+        <button (click)="apagarTag()">Apagar tags</button><br>
+        <button id="btn-addTask" type="submit">Adicionar Tarefas</button>
 
     </form>
 </div>
