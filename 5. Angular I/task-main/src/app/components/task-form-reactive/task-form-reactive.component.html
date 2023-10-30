@@ -40,16 +40,15 @@
             Adicionar Tag
         </button>
 
-
         <div class="form-group" formArrayName="tags">
             <div *ngFor="let tag of tags.controls; let i = index">
                 <label for="tags">Nome da Tag:</label>
-
                 <input id="tags" type="text" [formControlName]="i" />
             </div>
-        </div><br>
-        <button (click)="apagarTag()">Apagar tags</button><br>
-        <button id="btn-addTask" type="submit">Adicionar Tarefas</button>
-
+        </div>
+        <div>
+            <button (click)="apagarTag()" class="btn btn-secondary btn-red">Apagar tags</button>
+        </div>
+        <button id="btn-add" type="submit">{{ buttonText }}</button>
     </form>
 </div>

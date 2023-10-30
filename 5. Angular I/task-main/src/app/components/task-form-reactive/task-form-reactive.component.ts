@@ -15,6 +15,8 @@ export class TaskFormReactiveComponent implements OnInit {
   @Output() addTask = new EventEmitter();
   @Output() editTask = new EventEmitter();
 
+  buttonText:string = 'Adicionar tarefa'
+
   public formTask: FormGroup = this.formBuilder.group({
     title: ['', Validators.required],
     description: ['', Validators.required],
@@ -40,6 +42,7 @@ export class TaskFormReactiveComponent implements OnInit {
         ...this.taskedited,
         date: new Date(this.taskedited.date).toISOString().split('T')[0]
       });
+      this.buttonText = 'Atualizar tarefa'
     }
     window.scrollTo({
       top: 0,
@@ -66,6 +69,7 @@ export class TaskFormReactiveComponent implements OnInit {
       this.formTask.reset()
       this.newTask = new Task();
     }
+    this.buttonText = 'Adicionar tarefa'
   }
 
   markFormGroupTouched(formGroup: FormGroup) {
